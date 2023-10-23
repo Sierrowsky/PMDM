@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/background">
+
+    <TextView
+        android:id="@+id/txtCon"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/pddBtn"
+        android:text="@string/txtConectar"
+        android:textAlignment="center"
+        android:textColor="@color/text"
+        android:textSize="@dimen/txtCon"
+        android:textStyle="bold"/>
+    <EditText
+        android:id="@+id/user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/txtCon"
+        android:layout_marginStart="@dimen/margenStart"
+        android:layout_marginEnd="@dimen/magensEnd"
+        android:padding="@dimen/pddBtn"
+        android:hint="@string/hintUsuario"
+        />
+    <EditText
+        android:id="@+id/passwd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/txtCon"
+        android:layout_marginStart="@dimen/margenStart"
+        android:layout_marginEnd="@dimen/magensEnd"
+        android:hint="@string/hintPasswd"
+        android:padding="@dimen/pddBtn"
+        android:inputType="textPassword"/>
+    <Button
+        android:id="@+id/LogIn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/pddBtn"
+        android:textSize="@dimen/txtCon"
+        android:layout_marginStart="@dimen/margenStart"
+        android:layout_marginEnd="@dimen/magensEnd"
+        android:text="@string/btnLogIn"/>
+    <TextView
+        android:id="@+id/Forg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/txtForg"
+        android:text="@string/txtForg"
+        android:textColor="@color/text"
+        />
+
+
+</LinearLayout>

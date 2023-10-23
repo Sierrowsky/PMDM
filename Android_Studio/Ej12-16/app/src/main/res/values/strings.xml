@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Ej12-16</string>
+    <string name="txtConectar">Conectar</string>
+    <string name="hintUsuario">Usuario</string>
+    <string name="hintPasswd">Contraseña</string>
+    <string name="btnLogIn">Iniciar Sesion</string>
+    <string name="txtForg">¿Olvidaste tu contraseña?</string>
+</resources>

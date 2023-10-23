@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="margenStart">40dp</dimen>
+    <dimen name="magensEnd">40dp</dimen>
+    <dimen name="pddBtn">25dp</dimen>
+    <dimen name="txtCon">35sp</dimen>
+    <dimen name="txtForg">20sp</dimen>
+</resources>
