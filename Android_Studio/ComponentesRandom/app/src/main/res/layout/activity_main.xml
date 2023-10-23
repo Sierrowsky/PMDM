@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+    >
+
+        <TextView
+            android:id="@+id/HW"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hello World!" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/black"
+            />
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Introduce nombre"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="edad"
+            android:inputType="numberDecimal"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:hint="Password"
+            android:inputType="textPassword" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Multilinea con tipo"
+            android:inputType="textCapWords|textMultiLine"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Date"
+            android:inputType="date"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/black"
+            />
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/cheque"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ok"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ok"/>
+        <ToggleButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ok"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/black"
+            />
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Acepto condiciones"
+            android:checked="false"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/black"
+            />
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <RadioButton
+                android:id="@+id/rdsi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="si"
+                android:checked="false"/>
+            <RadioButton
+                android:id="@+id/rdno"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="no"
+                android:checked="true"/>
+            <RadioButton
+                android:id="@+id/rdaveces"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="a veces"
+                android:checked="false"/>
+        </RadioGroup>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/black"
+            />
+        <Switch
+            android:id="@+id/swWifi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Activar Wifi"/>
+        <Switch
+            android:id="@+id/swDatos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Activar Datos moviles"/>
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:min="1"
+        android:max="10"
+        android:progress="4"
+        style="@style/Widget.AppCompat.SeekBar.Discrete"
+        android:layout_margin="15dp"/>
+<RatingBar
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:numStars="5"
+    android:stepSize="0.5"/>
+    </LinearLayout>
+</ScrollView>
