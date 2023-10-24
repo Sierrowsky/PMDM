@@ -7,10 +7,10 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
     private TextView TVMesg;
-    private Button btnSi, btnNo, btna;
+    private Button btnSi, btnNo, btna, btna2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,7 +21,26 @@ public class MainActivity extends AppCompatActivity {
         btnSi=findViewById(R.id.btnSi);
         btnNo=findViewById(R.id.btnNo);
         btna=findViewById(R.id.btna);
+        btna2=findViewById(R.id.btna2);
+        //Instanciar el objeto de la clase Auxiliar (que implementa la interfaz) ---> objeto Listener
+        Auxiliar escuchadorSi = new Auxiliar();
+        //asignar el escuchador
+        btnSi.setOnClickListener(escuchadorSi);
+        btnNo.setOnClickListener(escuchadorNO);
+        btna2.setOnClickListener(this);
+        //Metodo 3Crear el escuchador (med. clase anonima) y asignarlo a la vista en 1ª instancia
+        btna.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                TVMesg.setText("Has pulsado A");
+            }
+        });
 
+    }
+
+    @Override
+    public void onClick(View v) {
+        TVMesg.setText("Has pulsado a 2");
     }
 /*
     public void onClickbtnSi(View view) {
@@ -39,7 +58,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
  */
-    public void onClickbtn(View view){/*
+   /* public void onClickbtn(View view){/*
         switch (view.getId()){
             case R.id.btnSi:
                 TVMesg.setText("Pulsaste Si");
@@ -50,7 +69,7 @@ public class MainActivity extends AppCompatActivity {
             case R.id.btna:
                 TVMesg.setText("Pulsaste ª");
             break;
-        }*/
+        }
         if (view.getId() == R.id.btnSi){
             TVMesg.setText("Pulsaste Si");
         }else if (view.getId() == R.id.btnNo){
@@ -58,5 +77,23 @@ public class MainActivity extends AppCompatActivity {
         }else if(view.getId() == R.id.btna){
             TVMesg.setText("Pulsaste a");
         }
+    }*/
+
+    //Metodo 1 Crear Clase AUX para implementar la interfaz
+    private class Auxiliar implements View.OnClickListener{
+
+        @Override
+        public void onClick(View v) {
+            TVMesg.setText("Has pulsado Si");
+        }
     }
+    //Metodo 2 Crear ek objeto escuchador med. una clase  anonima
+    private View.OnClickListener escuchadorNO = new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+            TVMesg.setText("Has pulsado No");
+        }
+    };
+
+
 }

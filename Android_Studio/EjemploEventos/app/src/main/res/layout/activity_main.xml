@@ -36,6 +36,13 @@
             android:text="a veces"
             android:onClick="onClickbtn"
             />
+        <Button
+            android:id="@+id/btna2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="a 2"
+            android:onClick="onClickbtn"
+            />
     </LinearLayout>
     <!-- Texto para mostrar mensaje resultante -->
         <TextView
