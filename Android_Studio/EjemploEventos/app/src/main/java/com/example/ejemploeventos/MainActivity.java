@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         btnSi.setOnClickListener(escuchadorSi);
         btnNo.setOnClickListener(escuchadorNO);
         btna2.setOnClickListener(this);
-        //Metodo 3Crear el escuchador (med. clase anonima) y asignarlo a la vista en 1ª instancia
+        //Metodo 3 Crear el escuchador (med. clase anonima) y asignarlo a la vista en 1ª instancia
         btna.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -87,7 +87,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             TVMesg.setText("Has pulsado Si");
         }
     }
-    //Metodo 2 Crear ek objeto escuchador med. una clase  anonima
+    //Metodo 2 Crear el objeto escuchador med. una clase  anonima
     private View.OnClickListener escuchadorNO = new View.OnClickListener() {
         @Override
         public void onClick(View v) {

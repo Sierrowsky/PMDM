@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/txtIdle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cuento Clicks"
+        android:textSize="40sp"/>
+    <Button
+        android:id="@+id/btnClk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pulsame"/>
+    <Button
+        android:id="@+id/btnFin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Finalizar"
+        />
+    <TextView
+        android:id="@+id/txtClick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="25sp"/>
+
+</LinearLayout>
