@@ -1,37 +1,60 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:gravity="center">
+    android:gravity="center"
+    >
+    <LinearLayout
+        android:id="@+id/ll1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible"
+        android:orientation="vertical"
+        android:gravity="center">
+        <TextView
+            android:id="@+id/tvG"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+        />
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <RadioButton
+                android:id="@+id/rbT"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Texto"
+            />
+            <RadioButton
+                android:id="@+id/rbI"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Imagen"
+            />
+        </RadioGroup>
 
-    <TextView
-        android:id="@+id/tvG"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text=""
-    />
-    <RadioGroup
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-        <RadioButton
-            android:id="@+id/rbR"
+        <Button
+            android:id="@+id/btnA"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Texto"
-        />
-        <RadioButton
-            android:id="@+id/rbI"
+            android:text="Aceptar" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone">
+        <TextView
+            android:id="@+id/tvGiro"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Imagen"
-        />
-    </RadioGroup>
-    <Button
-        android:id="@+id/btnA"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Aceptar"
-    />
+            android:text="Giramos"
+            />
+    </LinearLayout>
 </LinearLayout>

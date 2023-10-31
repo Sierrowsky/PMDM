@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
         @Override
         public void onClick(View v) {
             N += 45;
-            TVSal.ROTATION.set(TVSal, N);
+            TVSal.ROTATION.set(TVSal, N)
             TVSal.setTextSize(45);
             TVSal.setBackgroundColor(getResources().getColor(R.color.black));
             TVSal.setTextColor(getResources().getColor(R.color.white));
