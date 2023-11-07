@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Manejo de activities" />
+    <!-- llamada a activities sin nada-->
+    <Button
+        android:id="@+id/actividad2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Actividad 2"
+        android:onClick="onClickcambioactividad"
+        />
+    <!-- llamada a activities con datos-->
+    <Button
+        android:id="@+id/actividad3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Actividad 3 Datos"
+        android:onClick="onClickcambioactividad"
+        />
+    <!-- llamada a activities con Bundle-->
+    <Button
+        android:id="@+id/actividad4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Actividad 4 Bundle"
+        android:onClick="onClickcambioactividad"
+        />
+    <!-- llamada esperando respuesta-->
+    <Button
+        android:id="@+id/actividad5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Actividad 5 esperando respuesta"
+        android:onClick="onClickcambioactividad"
+        />
+</LinearLayout>
