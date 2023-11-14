@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/btn_contactos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mostrar Lista Contactos"
+        android:onClick="onClickBtn"/>
+    <Button
+        android:id="@+id/btn_Dial"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mostrar Dial"
+        android:onClick="onClickBtn"/>
+    <Button
+        android:id="@+id/btn_Dial_Premarcado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dial PreMarcado"
+        android:onClick="onClickBtn"/>
+    <Button
+        android:id="@+id/btn_Llamada_Directa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Llamar Directamente"
+        android:onClick="onClickBtn"/>
+    <Button
+        android:id="@+id/btn5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="5"/>
+    <Button
+        android:id="@+id/btn6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="6"/>
+    <Button
+        android:id="@+id/btn7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="7"/>
+    <Button
+        android:id="@+id/btn8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="8"/>
+
+
+
+</LinearLayout>
