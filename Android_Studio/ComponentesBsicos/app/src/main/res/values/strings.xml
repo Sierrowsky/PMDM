@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">ComponentesBásicos</string>
+    <string name="intro_name">Introduce tu nombre</string>
+    <string name="intro_edad">Introduce tu edad</string>
+</resources>
