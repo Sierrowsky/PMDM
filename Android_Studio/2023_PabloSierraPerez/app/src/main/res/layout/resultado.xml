@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="22dp"
+    android:background="@color/castellano">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Resultado"
+        android:textSize="25sp"
+        android:padding="22dp"
+        android:background="@color/castellano"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/castellanointerior"
+        android:gravity="center">
+        <TextView
+            android:id="@+id/tvResultado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="25sp"
+            android:textColor="@color/castellano"/>
+        <ImageView
+            android:id="@+id/ivIMCN"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:src="@drawable/imc_correcto"
+            />
+
+        <ImageView
+            android:id="@+id/ivIMCS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:src="@drawable/imc_sobrepeso"
+            />
+
+        <ImageView
+            android:id="@+id/ivIMCO"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:src="@drawable/imc_obesidad"
+            />
+        <TextView
+            android:id="@+id/txtIMC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:textSize="25sp"/>
+    </LinearLayout>
+
+
+</LinearLayout>

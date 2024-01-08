@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">2023_PabloSierraPerez</string>
+    <string name="Inicioapp">Calculo_IMC</string>
+    <string name="Titulo">IMC</string>
+    <string name="rbIMC">Calcular IMC</string>
+    <string name="rbInformacion">Más Información</string>
+    <string name="btnCalcular">Calcular</string>
+    <string name="btnFin">Fin APP</string>
+    <string name="Resultado">Resultado</string>
+</resources>
